@@ -19,8 +19,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
         
         .logo {
-            max-width: 150px; /* Logo is now half the original size */
-            width: 50%;
+            max-width: 75px; /* Logo size reduced */
+            width: 25%;
             height: auto;
             margin: 20px auto;
             border-radius: 50%; /* Makes the logo appear more futuristic */
@@ -28,15 +28,15 @@
         }
         h1 {
             color: #00ffcc;
-            font-size: 2.5em;
+            font-size: 1.8em; /* Reduced font size */
             animation: flicker 3s infinite alternate;
             text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Added a shadow to improve readability */
         }
         p {
             color: #ffffff;
-            font-size: 1.2em;
+            font-size: 1em; /* Reduced font size */
             animation: slideIn 3s ease-in-out;
-            margin-bottom: 40px;
+            margin-bottom: 20px; /* Reduced margin */
         }
         .contact-info {
             margin: 20px 0;
@@ -44,7 +44,7 @@
         .contact-info a {
             color: #00ffcc;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em; /* Reduced font size */
             animation: fadeInUp 4s ease-in-out;
         }
         .contact-info a:hover {
@@ -53,10 +53,13 @@
         }
         @media (min-width: 768px) {
             .logo {
-                max-width: 250px;
+                max-width: 100px; /* Adjusted size for larger screens */
+            }
+            h1 {
+                font-size: 2.2em; /* Adjusted font size */
             }
             p, .contact-info a {
-                font-size: 1.5em;
+                font-size: 1.2em; /* Adjusted font size */
             }
         }
         /* Background gradient animation */
