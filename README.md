@@ -1,16 +1,18 @@
-## Hi there 👋
+# Mother Fast Food - Under Construction Page
 
-<!--
-**motherfastfood/motherfastfood** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository contains the source code for the **Mother Fast Food** restaurant's under-construction webpage. The page is designed with a sleek, futuristic theme inspired by Iron Man's JARVIS interface. The goal is to keep our customers informed and connected while the full website is being developed.
 
-Here are some ideas to get you started:
+## Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **Futuristic Design**: The page utilizes a high-tech, JARVIS-inspired design with neon blue accents and animations to create a visually appealing experience.
+- **Responsive Layout**: The page is fully responsive and works seamlessly on various devices, including PCs, laptops, tablets, and mobile phones. It supports multiple operating systems such as Windows, macOS, Android, and Linux.
+- **Interactive Elements**:
+  - **Logo**: A circular logo with a neon blue glow that slightly zooms in on hover, adding a dynamic touch.
+  - **Text Animations**: The title and other text elements have 3D effects and animations, making them stand out.
+  - **Google Maps Integration**: A rectangular embedded map with a sleek design, helping users easily find our physical location.
+
+## How to Use
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/motherfastfood-underconstruction.git
