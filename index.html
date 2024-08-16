@@ -3,23 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Mother Fast Food - Under Construction</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            background-color: #ffffff; /* White background */
             margin: 0;
-            background-color: #f3f3f3;
+            padding: 20px;
+            color: #00ffcc; /* Futuristic neon color */
+            background: radial-gradient(circle, #000000, #0a0a0a, #141414, #1f1f1f, #292929);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
         }
-        img {
-            max-width: 100%;
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        .logo {
+            max-width: 150px; /* Logo is now half the original size */
+            width: 50%;
             height: auto;
+            margin: 20px auto;
+            border-radius: 50%; /* Makes the logo appear more futuristic */
+            box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+        }
+        h1 {
+            color: #00ffcc;
+            font-size: 2.5em;
+            animation: flicker 3s infinite alternate;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Added a shadow to improve readability */
+        }
+        p {
+            color: #ffffff;
+            font-size: 1.2em;
+            animation: slideIn 3s ease-in-out;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-size: 1.2em;
+            animation: fadeInUp 4s ease-in-out;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: #ffffff; /* Hover effect */
+        }
+        @media (min-width: 768px) {
+            .logo {
+                max-width: 250px;
+            }
+            p, .contact-info a {
+                font-size: 1.5em;
+            }
+        }
+        /* Background gradient animation */
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        /* Text flicker animation */
+        @keyframes flicker {
+            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                opacity: 0.99;
+                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Reduced the glow intensity */
+            }
+            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                opacity: 0.4;
+                text-shadow: none;
+            }
+        }
+        /* Keyframes for animations */
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/motherfastfood/motherfastfood/main/Moher%20fastfood%20page%20image.png" alt="Under Construction">
+    <img src="https://github.com/motherfastfood/motherfastfood/blob/main/mfr%20logo.jpg?raw=true" alt="Mother Fast Food Logo" class="logo">
+    <h1>Our Website is Under Construction</h1>
+    <p>We're working hard to bring you the best online experience. In the meantime, you can reach out to us through the following:</p>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:motherfastfoodrestaurant@gmail.com">motherfastfoodrestaurant@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/motherfastfood.in/" target="_blank">Visit our Facebook Page</a></p>
+    </div>
 </body>
 </html>
