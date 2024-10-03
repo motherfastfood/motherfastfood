@@ -1,3 +1,3 @@
-# Mother Fast Food - Under Construction Page
+# Mother Fast Food & Restaurant
 
-This repository contains the source code for the **Mother Fast Food** restaurant's under-construction webpage. The page is designed with a sleek, futuristic theme. The goal is to keep our customers informed and connected while the full website is being developed.
+This repository contains the source code for the **Mother Fast Food & Restaurant** restaurant's webpage. The page is designed with a simple theme. The goal is to keep our customers informed our updates.
