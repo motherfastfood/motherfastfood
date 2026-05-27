@@ -1,140 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YNLX8PZBS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YNLX8PZBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9YNLX8PZBS');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6251382702970234" crossorigin="anonymous"></script>
 
-  gtag('config', 'G-9YNLX8PZBS');
-</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6251382702970234"
-     crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother Fast Food & Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother Fast Food & Restaurant – Authentic Gujarati Cuisine, Surat</title>
+  <meta name="description" content="Mother Fast Food & Restaurant – Surat's beloved family-run Gujarati thali since 1998. Pure vegetarian, authentic, homemade.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+  :root {
+    --spice:    #C05B1A;
+    --spice-d:  #943E0A;
+    --spice-l:  #E07830;
+    --amber:    #D4941A;
+    --cream:    #FAF6F0;
+    --cream-2:  #F2EAD9;
+    --linen:    #EDE4D5;
+    --sand:     #D9CEBC;
+    --bark:     #5C3D1E;
+    --bark-2:   #7A5535;
+    --bark-3:   #A07850;
+    --ink:      #1C0F04;
+    --green:    #2A7A2A;
+    --white:    #FFFFFF;
+    --s1: 0 1px 8px rgba(92,61,30,0.08);
+    --s2: 0 4px 20px rgba(92,61,30,0.12);
+    --s3: 0 10px 40px rgba(92,61,30,0.17);
+    --nav-h: 66px;
+    --r: 14px;
+    --r-sm: 8px;
+  }
+
+  html { scroll-behavior:smooth; }
+  body { font-family:'Outfit',sans-serif; background:var(--cream); color:var(--bark); overflow-x:hidden; }
+  img  { display:block; max-width:100%; }
+  a    { color:inherit; text-decoration:none; }
+
+  ::-webkit-scrollbar { width:4px; }
+  ::-webkit-scrollbar-track { background:var(--cream-2); }
+  ::-webkit-scrollbar-thumb { background:var(--spice); border-radius:99px; }
+
+  /* ── type helpers ── */
+  .eyebrow {
+    font-size:0.66rem; font-weight:700;
+    letter-spacing:0.22em; text-transform:uppercase;
+    color:var(--spice); display:block; margin-bottom:9px;
+  }
+  .h2 {
+    font-family:'Playfair Display',serif;
+    font-size:clamp(1.75rem,2.8vw,2.6rem);
+    font-weight:600; line-height:1.18;
+    color:var(--ink); letter-spacing:-0.01em;
+    margin-bottom:10px;
+  }
+  .h2 em { font-style:italic; color:var(--spice); }
+  .body-text { font-size:0.90rem; line-height:1.72; color:var(--bark-2); }
+
+  .rule { display:flex; align-items:center; gap:9px; margin:12px 0 18px; }
+  .rl   { width:32px; height:1.5px; background:var(--spice); border-radius:2px; }
+  .rd   { width:6px; height:6px; background:var(--amber); transform:rotate(45deg); flex-shrink:0; }
+  .rule.c { justify-content:center; }
+  .rule.c .rl:first-child { background:linear-gradient(to left,var(--spice),transparent); }
+
+  /* ══ NAV ══ */
+  .nav {
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    height:var(--nav-h);
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 5%;
+    background:rgba(250,246,240,0.84);
+    backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(192,91,26,0.11);
+    transition:background .3s, box-shadow .3s;
+  }
+  .nav.scrolled { background:rgba(250,246,240,0.97); box-shadow:var(--s2); }
+  .nav-logo { height:42px; width:auto; }
+
+  .nav-links { display:flex; align-items:center; gap:28px; }
+  .nav-links a {
+    font-size:0.72rem; font-weight:600;
+    letter-spacing:0.13em; text-transform:uppercase;
+    color:var(--bark-2); position:relative; transition:color .22s;
+  }
+  .nav-links a::after {
+    content:''; position:absolute; bottom:-3px; left:0;
+    width:0; height:1.5px; background:var(--spice); transition:width .22s;
+  }
+  .nav-links a:hover { color:var(--spice-d); }
+  .nav-links a:hover::after { width:100%; }
+  .nav-links a.pill {
+    background:var(--spice); color:var(--white);
+    padding:8px 20px; border-radius:99px;
+    box-shadow:0 3px 14px rgba(192,91,26,.28);
+    transition:background .22s, transform .18s, box-shadow .22s;
+  }
+  .nav-links a.pill::after { display:none; }
+  .nav-links a.pill:hover { background:var(--spice-d); transform:translateY(-1px); color:var(--white); }
+
+  .burger {
+    display:none; flex-direction:column; gap:5px;
+    background:none; border:none; cursor:pointer; padding:4px;
+  }
+  .burger span { display:block; width:23px; height:2px; background:var(--spice); border-radius:2px; transition:transform .28s, opacity .28s; }
+  .burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  .burger.open span:nth-child(2) { opacity:0; }
+  .burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+  .drawer {
+    display:none; position:fixed;
+    top:var(--nav-h); left:0; right:0;
+    background:rgba(250,246,240,0.98);
+    z-index:997; flex-direction:column;
+    border-bottom:1px solid rgba(192,91,26,0.11);
+    box-shadow:var(--s3);
+  }
+  .drawer.open { display:flex; }
+  .drawer a {
+    font-size:0.83rem; font-weight:500;
+    letter-spacing:0.09em; text-transform:uppercase;
+    color:var(--bark); padding:13px 5%;
+    border-bottom:1px solid rgba(192,91,26,0.07);
+    transition:color .18s, background .18s;
+  }
+  .drawer a:last-child { border-bottom:none; color:var(--spice); font-weight:600; }
+  .drawer a:hover { background:rgba(192,91,26,0.05); color:var(--spice); }
+
+  /* ══ HERO ══ */
+  .hero {
+    min-height:100vh;
+    display:grid; grid-template-columns:52% 48%;
+    padding-top:var(--nav-h);
+    background:var(--cream); position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; inset:0;
+    background-image:radial-gradient(circle at 1px 1px,rgba(192,91,26,0.052) 1px,transparent 0);
+    background-size:26px 26px; pointer-events:none;
+  }
+
+  .hero-copy {
+    display:flex; align-items:center;
+    padding:64px 4% 64px 7%;
+    position:relative; z-index:2;
+  }
+  .hero-copy-inner { max-width:500px; }
+
+  .hero-chip {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(192,91,26,0.08); border:1px solid rgba(192,91,26,0.20);
+    border-radius:99px; padding:5px 15px;
+    font-size:0.65rem; font-weight:700;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--spice-d);
+    margin-bottom:20px; animation:up .65s .05s both;
+  }
+  .pdot { width:6px; height:6px; border-radius:50%; background:var(--spice); animation:pulse 2.2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.45;transform:scale(1.5)} }
+
+  .hero-h1 {
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2.6rem,5vw,4.5rem);
+    font-weight:700; line-height:1.07;
+    color:var(--ink); letter-spacing:-0.01em;
+    margin-bottom:16px; animation:up .65s .15s both;
+  }
+  .hero-h1 em { font-style:italic; color:var(--spice); }
+  .hero-h1 .ac { color:var(--spice-d); }
+
+  .hero-sub {
+    font-size:0.93rem; line-height:1.70; color:var(--bark-2);
+    max-width:400px; margin-bottom:30px;
+    animation:up .65s .26s both;
+  }
+  .hero-btns { display:flex; gap:11px; flex-wrap:wrap; animation:up .65s .36s both; }
+
+  .btn-s {
+    background:linear-gradient(135deg,var(--spice),var(--spice-d));
+    color:var(--white); padding:12px 28px; border-radius:99px;
+    font-size:0.77rem; font-weight:600; letter-spacing:0.09em; text-transform:uppercase;
+    display:inline-flex; align-items:center; gap:7px;
+    box-shadow:0 5px 18px rgba(192,91,26,.32);
+    transition:transform .2s, box-shadow .2s;
+  }
+  .btn-s:hover { transform:translateY(-2px); box-shadow:0 8px 26px rgba(192,91,26,.42); }
+
+  .btn-g {
+    color:var(--bark); padding:11px 24px; border-radius:99px;
+    font-size:0.77rem; font-weight:500; letter-spacing:0.09em; text-transform:uppercase;
+    border:1.5px solid rgba(92,61,30,0.20);
+    display:inline-flex; align-items:center; gap:7px;
+    transition:border-color .2s, color .2s, transform .2s;
+  }
+  .btn-g:hover { border-color:var(--spice); color:var(--spice-d); transform:translateY(-2px); }
+
+  .hero-stats {
+    display:flex; gap:28px;
+    margin-top:38px; padding-top:26px;
+    border-top:1px solid rgba(192,91,26,0.13);
+    animation:up .65s .48s both;
+  }
+  .sn {
+    font-family:'Playfair Display',serif;
+    font-size:1.75rem; font-weight:700; color:var(--spice); line-height:1;
+  }
+  .sl {
+    font-size:0.63rem; font-weight:600; letter-spacing:0.10em;
+    text-transform:uppercase; color:var(--bark-3); margin-top:4px;
+  }
+
+  .hero-img {
+    position:relative; overflow:hidden;
+  }
+  .hero-img img {
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  }
+  .hero-img::before {
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(to right,var(--cream) 0%,transparent 18%);
+    z-index:1;
+  }
+  .hero-img::after {
+    content:''; position:absolute;
+    top:0; left:0; right:0; height:26%;
+    background:linear-gradient(to bottom,var(--cream),transparent); z-index:1;
+  }
+
+  .hero-float {
+    position:absolute; bottom:36px; left:26px; z-index:4;
+    background:var(--white); border-radius:var(--r);
+    padding:13px 18px; box-shadow:var(--s3);
+    border:1px solid rgba(192,91,26,0.09);
+    display:flex; align-items:center; gap:12px;
+    animation:up .65s .55s both;
+  }
+  .hfi {
+    width:40px; height:40px;
+    background:linear-gradient(135deg,var(--spice),var(--spice-d));
+    border-radius:9px; display:flex; align-items:center; justify-content:center;
+    font-size:1.15rem; flex-shrink:0;
+  }
+  .hfn { font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:700; color:var(--ink); line-height:1; }
+  .hfl { font-size:0.62rem; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:var(--bark-3); }
+
+  @keyframes up { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+  /* ══ MARQUEE ══ */
+  .mq { background:var(--spice); padding:10px 0; overflow:hidden; white-space:nowrap; }
+  .mq-track { display:inline-flex; animation:mscroll 24s linear infinite; }
+  .mi {
+    display:inline-flex; align-items:center; gap:9px; padding:0 26px;
+    font-family:'Playfair Display',serif; font-size:0.88rem;
+    font-weight:500; letter-spacing:0.06em;
+    color:rgba(255,255,255,.90); text-transform:uppercase;
+  }
+  .ms { width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,.4); }
+  @keyframes mscroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+  /* ══ ABOUT ══ */
+  #about {
+    background:var(--cream-2); padding:68px 7%;
+    position:relative; overflow:hidden;
+  }
+  #about::before {
+    content:''; position:absolute; inset:0;
+    background-image:radial-gradient(circle at 1px 1px,rgba(192,91,26,0.048) 1px,transparent 0);
+    background-size:22px 22px; pointer-events:none;
+  }
+
+  /* ── The KEY fix: proper side-by-side, perfectly aligned ── */
+  .about-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:52px;
+    align-items:center;   /* vertically centres both columns */
+    position:relative; z-index:1;
+  }
+
+  /* Image mosaic — contained, no overflow issues */
+  .about-imgs {
+    position:relative;
+    width:100%;
+    /* Aspect ratio container so height tracks width */
+    aspect-ratio:4/3.8;
+  }
+  .about-imgs img {
+    position:absolute; object-fit:cover;
+    border-radius:var(--r);
+  }
+  .ai-main {
+    width:74%; height:84%;
+    top:0; left:0; box-shadow:var(--s3);
+  }
+  .ai-thumb {
+    width:48%; height:52%;
+    bottom:0; right:0; box-shadow:var(--s2);
+    border:3px solid var(--cream-2);
+  }
+  .ai-badge {
+    position:absolute; bottom:8%; left:-3%;
+    background:linear-gradient(135deg,var(--spice),var(--spice-d));
+    border-radius:var(--r-sm); padding:14px 18px;
+    text-align:center;
+    box-shadow:0 6px 24px rgba(192,91,26,0.40); z-index:6;
+  }
+  .ai-badge .bn {
+    font-family:'Playfair Display',serif;
+    font-size:2rem; font-weight:700; color:var(--white); display:block; line-height:1;
+  }
+  .ai-badge .bl {
+    font-size:0.57rem; font-weight:700; letter-spacing:0.10em;
+    text-transform:uppercase; color:rgba(255,255,255,.80);
+    display:block; margin-top:3px; line-height:1.35;
+  }
+
+  /* Text side */
+  .about-copy {}
+  .about-copy .body-text + .body-text { margin-top:9px; }
+
+  .feat-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:22px; }
+  .feat {
+    background:var(--cream); border:1px solid rgba(192,91,26,0.09);
+    border-radius:var(--r-sm); padding:14px;
+    transition:border-color .22s, transform .22s, box-shadow .22s;
+  }
+  .feat:hover { border-color:rgba(192,91,26,0.28); transform:translateY(-2px); box-shadow:var(--s1); }
+  .feat-ic { font-size:1.2rem; margin-bottom:7px; }
+  .feat-t  { font-size:0.80rem; font-weight:600; color:var(--ink); margin-bottom:2px; }
+  .feat-d  { font-size:0.73rem; color:var(--bark-3); line-height:1.48; }
+
+  .hours-box {
+    margin-top:20px; background:var(--cream);
+    border:1px solid rgba(192,91,26,0.11);
+    border-radius:var(--r-sm); padding:18px 20px; box-shadow:var(--s1);
+  }
+  .hours-t {
+    font-family:'Playfair Display',serif;
+    font-size:0.95rem; font-weight:600; color:var(--amber);
+    margin-bottom:11px; display:flex; align-items:center; gap:7px;
+  }
+  .hr { display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid rgba(192,91,26,0.07); font-size:0.80rem; }
+  .hr:last-child { border-bottom:none; }
+  .hr-l { color:var(--bark-3); }
+  .hr-v { color:var(--bark); font-weight:500; }
+  .hr-v.cl { color:#C0392B; font-weight:600; }
+
+  /* ══ MENU ══ */
+  #menu { padding:68px 7%; background:var(--cream); position:relative; }
+  #menu::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:280px;
+    background:linear-gradient(to bottom,var(--cream-2),transparent); pointer-events:none;
+  }
+  .menu-head { display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:38px; position:relative; z-index:1; }
+  .menu-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; position:relative; z-index:1; }
+
+  .mc {
+    background:var(--white); border-radius:var(--r); overflow:hidden;
+    border:1px solid rgba(192,91,26,0.08); box-shadow:var(--s1);
+    transition:transform .3s cubic-bezier(.25,.8,.25,1), box-shadow .3s, border-color .3s;
+  }
+  .mc:hover { transform:translateY(-8px); box-shadow:var(--s3); border-color:rgba(192,91,26,0.24); }
+
+  .mc-img { position:relative; height:185px; overflow:hidden; }
+  .mc-img img { width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.25,.8,.25,1); }
+  .mc:hover .mc-img img { transform:scale(1.07); }
+  .mc-img::after { content:''; position:absolute; bottom:0; left:0; right:0; height:50px; background:linear-gradient(to top,rgba(255,255,255,.85),transparent); }
+
+  .mc-tag {
+    position:absolute; top:11px; left:11px;
+    background:rgba(250,246,240,.91); border:1px solid rgba(192,91,26,.26);
+    border-radius:99px; font-size:0.57rem; font-weight:700;
+    letter-spacing:0.12em; text-transform:uppercase; color:var(--spice-d);
+    padding:3px 11px; backdrop-filter:blur(4px);
+  }
+  .mc-veg {
+    position:absolute; top:11px; right:11px;
+    width:19px; height:19px; background:var(--white);
+    border-radius:3px; border:2px solid var(--green);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .mc-veg::after { content:''; width:7px; height:7px; border-radius:50%; background:var(--green); }
+
+  .mc-body { padding:14px 16px 18px; }
+  .mc-body h3 { font-family:'Playfair Display',serif; font-size:1.07rem; font-weight:600; color:var(--ink); margin-bottom:5px; }
+  .mc-body p  { font-size:0.75rem; color:var(--bark-2); line-height:1.58; }
+
+  /* ══ TESTIMONIALS ══ */
+  #testimonials { padding:68px 7%; background:var(--cream-2); position:relative; overflow:hidden; }
+  #testimonials::before {
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(192,91,26,0.07) 0%,transparent 60%);
+    pointer-events:none;
+  }
+  .testi-wrap { max-width:840px; margin:0 auto; }
+  .rev-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:38px; }
+
+  .rc {
+    background:var(--white); border:1px solid rgba(192,91,26,0.08);
+    border-radius:var(--r); padding:24px 22px; box-shadow:var(--s1);
+    position:relative; transition:transform .28s, box-shadow .28s, border-color .28s;
+  }
+  .rc:hover { transform:translateY(-4px); box-shadow:var(--s2); border-color:rgba(192,91,26,0.20); }
+  .rc::before {
+    content:'\201C'; font-family:'Playfair Display',serif;
+    font-size:5rem; color:rgba(192,91,26,0.07);
+    position:absolute; top:4px; left:16px; line-height:1; pointer-events:none;
+  }
+  .rc-author { display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+  .rc-av { width:44px; height:44px; border-radius:50%; object-fit:cover; border:2px solid rgba(192,91,26,.22); flex-shrink:0; }
+  .rc-name  { font-weight:600; color:var(--ink); font-size:0.85rem; }
+  .rc-stars { font-size:0.73rem; color:var(--amber); margin-top:2px; letter-spacing:1.5px; }
+  .rc-text  { font-size:0.84rem; color:var(--bark-2); line-height:1.65; position:relative; z-index:1; }
+
+  .rat-row {
+    display:flex; align-items:center; gap:18px;
+    margin-top:28px;
+    background:var(--white); border:1px solid rgba(192,91,26,0.09);
+    border-radius:var(--r); padding:20px 26px; box-shadow:var(--s1);
+    flex-wrap:wrap;
+  }
+  .r-big { font-family:'Playfair Display',serif; font-size:3.5rem; font-weight:700; color:var(--amber); line-height:1; flex-shrink:0; }
+  .r-div  { width:1px; height:44px; background:rgba(192,91,26,0.13); flex-shrink:0; }
+  .r-stars { font-size:1.1rem; color:var(--amber); letter-spacing:3px; }
+  .r-cap   { font-size:0.75rem; color:var(--bark-3); margin-top:4px; line-height:1.4; }
+  .r-g     { margin-left:auto; display:flex; align-items:center; gap:7px; font-size:0.68rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:var(--bark-3); }
+  .g-c     { width:28px; height:28px; border-radius:50%; background:var(--white); border:1px solid #ddd; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.95rem; font-family:sans-serif; color:#4285F4; box-shadow:0 1px 4px rgba(0,0,0,.09); }
+
+  /* ══ CONTACT ══ */
+  #contact { padding:68px 7%; background:var(--cream); }
+  .contact-grid { display:grid; grid-template-columns:1fr 1.35fr; gap:40px; align-items:start; margin-top:38px; }
+
+  .cp {
+    background:var(--white); border:1px solid rgba(192,91,26,0.09);
+    border-radius:var(--r); padding:26px 24px; box-shadow:var(--s1);
+  }
+  .ci { display:flex; gap:13px; align-items:flex-start; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid rgba(192,91,26,0.07); }
+  .ci:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .ci-icon { width:38px; height:38px; background:rgba(192,91,26,0.07); border:1px solid rgba(192,91,26,0.16); border-radius:var(--r-sm); display:flex; align-items:center; justify-content:center; font-size:0.95rem; flex-shrink:0; }
+  .ci h4 { font-size:0.78rem; font-weight:600; color:var(--ink); margin-bottom:4px; letter-spacing:0.02em; }
+  .ci p, .ci a { font-size:0.77rem; color:var(--bark-2); line-height:1.56; transition:color .18s; }
+  .ci a:hover { color:var(--spice); }
+
+  .map-box { border-radius:var(--r); overflow:hidden; box-shadow:var(--s2); border:1px solid rgba(192,91,26,0.09); height:400px; }
+  .map-box iframe { width:100%; height:100%; border:none; }
+
+  /* ══ FOOTER ══ */
+  footer { background:var(--ink); padding:44px 7% 26px; position:relative; overflow:hidden; }
+  footer::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(to right,transparent,var(--spice),transparent); }
+
+  .foot-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:40px; margin-bottom:34px; }
+  .foot-logo { height:40px; opacity:.84; margin-bottom:12px; filter:brightness(1.5) saturate(.6); }
+  .foot-ab   { font-size:0.77rem; color:rgba(245,236,216,.45); line-height:1.68; max-width:250px; }
+
+  .fc h5 { font-family:'Playfair Display',serif; font-size:0.90rem; font-weight:600; color:rgba(245,236,216,.82); margin-bottom:12px; letter-spacing:0.03em; }
+  .fc a  { display:block; font-size:0.75rem; color:rgba(245,236,216,.40); margin-bottom:8px; transition:color .18s; }
+  .fc a:hover { color:var(--spice-l); }
+
+  .foot-bot { border-top:1px solid rgba(245,236,216,0.07); padding-top:18px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:9px; }
+  .foot-cr  { font-size:0.69rem; color:rgba(245,236,216,.28); letter-spacing:0.04em; }
+  .vbadge   { display:inline-flex; align-items:center; gap:6px; background:rgba(42,122,42,0.13); border:1px solid rgba(42,122,42,0.26); border-radius:99px; padding:4px 11px; font-size:0.62rem; font-weight:700; letter-spacing:0.10em; text-transform:uppercase; color:#5BB85B; }
+  .vbadge::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--green); display:block; }
+
+  /* ══ BACK TO TOP ══ */
+  .btt { position:fixed; bottom:22px; right:22px; z-index:900; width:40px; height:40px; background:var(--spice); border:none; border-radius:50%; color:var(--white); font-size:1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(192,91,26,.38); opacity:0; pointer-events:none; transform:translateY(10px); transition:opacity .28s, transform .28s, background .22s; }
+  .btt.show { opacity:1; pointer-events:auto; transform:translateY(0); }
+  .btt:hover { background:var(--spice-d); transform:translateY(-3px); }
+
+  /* ══ FADE IN ══ */
+  .fi { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
+  .fi.on { opacity:1; transform:translateY(0); }
+
+  /* ══ RESPONSIVE ══ */
+  @media(max-width:1200px){ .menu-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:1024px){
+    .hero{grid-template-columns:1fr; min-height:auto;}
+    .hero-img{display:none;}
+    .hero-copy{padding:76px 5% 52px;}
+    .hero-copy-inner{max-width:100%;}
+    .about-grid{grid-template-columns:1fr; gap:36px;}
+    .about-imgs{max-width:480px; height:auto; margin:0 auto;}
+    .contact-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:768px){
+    .nav-links{display:none;} .burger{display:flex;}
+    .hero-copy{padding:68px 5% 44px;}
+    .hero-h1{font-size:2.5rem;}
+    .hero-stats{gap:18px; flex-wrap:wrap;}
+    .about-imgs{max-width:100%; aspect-ratio:4/3.4;}
+    .feat-grid{grid-template-columns:1fr;}
+    .menu-grid{grid-template-columns:1fr 1fr; gap:12px;}
+    .mc-img{height:155px;}
+    .rev-grid{grid-template-columns:1fr;}
+    .rat-row{flex-direction:column; align-items:flex-start; gap:10px;}
+    .r-g{margin-left:0;}
+    .foot-grid{grid-template-columns:1fr; gap:24px;}
+    .foot-bot{flex-direction:column; text-align:center;}
+    #about,#menu,#testimonials,#contact{padding:52px 5%;}
+  }
+  @media(max-width:480px){
+    .hero-h1{font-size:2.15rem;}
+    .hero-btns{flex-direction:column;}
+    .btn-s,.btn-g{justify-content:center;}
+    .menu-grid{grid-template-columns:1fr;}
+    .about-imgs{aspect-ratio:4/3.2;}
+  }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <img src="https://raw.githubusercontent.com/ujvalmech/mother/3f66ba31090fc239ccd8c1187c6de011853649e7/logo.svg" alt="Mother Fast Food Logo" class="navbar-logo">
-        <div class="navbar-menu">
-            <a href="#home">🏠Home</a>
-            <a href="#about">About Us</a>
-            <a href="#menu">Menu</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact Us  ➤➤  </a>
-        </div>
-        <button class="navbar-toggle">☰</button>
-    </nav>
-    
-    <!-- Header with Background Image -->
-    <header class="header">
-        <div class="header-overlay">
-            <div class="header-text">
-                <h1>Mother Fast Food & Restaurant</h1>
-                <p>Authentic Gujarati Vegetarian Cuisine</p>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <!-- Welcome content can be added here -->
-    </section>
-    
-    <!-- About Us Section -->
-    <section id="about" class="section partition-box">
-        <h2>About Us</h2>
-        <p>Mother Fast Food & Restaurant is one of the oldest and most beloved Gujarati food providers in Surat. Since 1998, we have been dedicated to serving authentic vegetarian Gujarati cuisine. Our commitment to quality, taste, and hygiene has earned us a loyal customer base and a Google rating of 4.5 out of 5.0.</p>
-        <p>Our family-run business ensures that every meal is prepared with care and consistency, as we handle everything ourselves without involving external staff. This allows us to maintain the high standards that our customers have come to expect and appreciate.</p>
-        <h3>Opening Times</h3>
-        <p>Lunch: Monday - Saturday : 12:30 pm - 03:30 pm</p>
-        <p>Dinner: Monday - Saturday : 07:30 pm - 11:00 pm</p>
-        <p>Sunday : Closed</p>
-    </section>
-    
-    <!-- Menu Section -->
-    <section id="menu" class="section">
-        <h2>Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="https://github.com/ujvalmech/mother/blob/main/dish-1.jpg?raw=true" alt="Gujarati Thali">
-                <h3>Gujarati Thali</h3>
-                <p class="info">Our Gujarati thali features 2 sabjis, 5 chapatis (or parathas), dal-rice, and salad, with buttermilk and papad available for an extra charge, all made with a homemade touch.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/ujvalmech/mother/blob/main/dish-2.jpg?raw=true" alt="Odo & Bajri Rotla">
-                <h3>Odo & Bajri Rotla</h3>
-                <p class="info">Our Bajri na Rotla and Odo, traditional Kathiyawadi items, feature hearty bajri rotla served with flavorful odo for an authentic taste.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/ujvalmech/mother/blob/main/dish-3.jpg?raw=true" alt="Kadhi Khichdi">
-                <h3>Kadhi Khichdi</h3>
-                <p class="info">Our Gujarati Kadhi Khichdi combines aromatic kadhi with perfectly cooked khichdi, offering a comforting and authentic taste of Gujarat.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/ujvalmech/mother/blob/main/dish-4.jpg?raw=true" alt="Dal Bati">
-                <h3>Dal Bati</h3>
-                <p class="info">Our Rajasthani Dal Bati features crispy, golden bati served with savory dal, delivering an authentic and hearty taste of Rajasthan.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section partition-box">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUSvD5z3injKfxcBm2oaEtBKpenkz2kTPPiULki74RxudKirq8U=w90-h90-p-rp-mo-ba5-br100" alt="Reviewer 1" class="testimonial-img">
-            <p class="testimonial-comment">"💥Budget food, value for money, very low price."</p>
-            <p class="testimonial-author">- Maninder Singh</p>
-            <div class="testimonial-rating">⭐⭐⭐⭐☆</div>
-        </div>
-        <div class="testimonial">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVJGwDNlJDJ3vpfkOqQ8FRk9Oq7TYrMzt9AWyW86bPYp5AdOeItug=w90-h90-p-rp-mo-ba7-br100" alt="Reviewer 2" class="testimonial-img">
-            <p class="testimonial-comment">"Kinjal Chhaya"Homely and personalized meal experience"</p>
-            <p class="testimonial-author">- Kinjal Chhaya</p>
-            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-        </div>
-        <div class="ad-section">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6251382702970234"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-    </section>
-    
-    <!-- Contact Us Section -->
-    <section id="contact" class="section partition-box">
-        <h2>Contact Us</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Our Address</h3>
-                <p>Mother Fast Food & Restaurant, New Adajan, Shop no-13, Crystal Complex, beside of Jalaram Row-house, near Gangeshwar Temple, Chatrapati Shivaji Marg, to, Honey Park Rd, Surat, Gujarat 395009.</p>
-                <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:motherfastfoodrestaurant@gmail.com">motherfastfoodrestaurant@gmail.com</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/motherfastfood.in/" target="_blank">Mother Fast Food</a></p>
-            </div>
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.864655483635!2d72.78890807380276!3d21.19753488196323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c329067a09f%3A0x531880cc3b7c8bae!2sMother%20Fast%20Food%20%26%20Restaurant!5e0!3m2!1sen!2sin!4v1725016849137!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Mother Fast Food & Restaurant. All rights reserved.</p>
-    </footer>
 
-    <!-- Back to Home Button -->
-    <button class="back-to-home" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Home</button>
+<!-- ══ NAV ══ -->
+<nav class="nav" id="nav">
+  <img src="https://raw.githubusercontent.com/ujvalmech/mother/3f66ba31090fc239ccd8c1187c6de011853649e7/logo.svg"
+       alt="Mother Fast Food & Restaurant" class="nav-logo">
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact" class="pill">Visit Us →</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="drawer" id="drawer">
+  <a href="#home"         onclick="cm()">Home</a>
+  <a href="#about"        onclick="cm()">About Us</a>
+  <a href="#menu"         onclick="cm()">Our Menu</a>
+  <a href="#testimonials" onclick="cm()">Reviews</a>
+  <a href="#contact"      onclick="cm()">Visit Us →</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <div class="hero-copy-inner">
+      <div class="hero-chip"><span class="pdot"></span>Since 1998 &nbsp;·&nbsp; Surat, Gujarat</div>
+      <h1 class="hero-h1">The Heart of<br><em>Gujarati</em> <span class="ac">Cuisine</span></h1>
+      <p class="hero-sub">Pure vegetarian, authentically prepared — every meal carries the warmth of a home kitchen and 26 years of culinary heritage.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-s">Explore Menu <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="#contact" class="btn-g">Find Us</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="sn">4.5★</div><div class="sl">Google Rating</div></div>
+        <div><div class="sn">26+</div><div class="sl">Years Serving</div></div>
+        <div><div class="sn">100%</div><div class="sl">Vegetarian</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://github.com/ujvalmech/mother/blob/main/dish-1.jpg?raw=true" alt="Gujarati Thali" loading="eager">
+    <div class="hero-float">
+      <div class="hfi">🍽️</div>
+      <div><div class="hfn">26 Years</div><div class="hfl">of Culinary Excellence</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-track">
+    <span class="mi">Gujarati Thali <span class="ms"></span></span>
+    <span class="mi">Kadhi Khichdi <span class="ms"></span></span>
+    <span class="mi">Bajri Rotla <span class="ms"></span></span>
+    <span class="mi">Dal Bati <span class="ms"></span></span>
+    <span class="mi">Kathiyawadi Cuisine <span class="ms"></span></span>
+    <span class="mi">Family Kitchen · Since 1998 <span class="ms"></span></span>
+    <span class="mi">100% Pure Vegetarian <span class="ms"></span></span>
+    <span class="mi">Homemade with Love <span class="ms"></span></span>
+    <span class="mi">Gujarati Thali <span class="ms"></span></span>
+    <span class="mi">Kadhi Khichdi <span class="ms"></span></span>
+    <span class="mi">Bajri Rotla <span class="ms"></span></span>
+    <span class="mi">Dal Bati <span class="ms"></span></span>
+    <span class="mi">Kathiyawadi Cuisine <span class="ms"></span></span>
+    <span class="mi">Family Kitchen · Since 1998 <span class="ms"></span></span>
+    <span class="mi">100% Pure Vegetarian <span class="ms"></span></span>
+    <span class="mi">Homemade with Love <span class="ms"></span></span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="about-grid">
+
+    <!-- IMAGE LEFT — perfectly contained -->
+    <div class="about-imgs fi">
+      <img class="ai-main"  src="https://github.com/ujvalmech/mother/blob/main/dish-3.jpg?raw=true" alt="Kadhi Khichdi" loading="lazy">
+      <img class="ai-thumb" src="https://github.com/ujvalmech/mother/blob/main/dish-2.jpg?raw=true" alt="Bajri Rotla"   loading="lazy">
+      <div class="ai-badge"><span class="bn">26</span><span class="bl">Years of<br>Excellence</span></div>
+    </div>
+
+    <!-- TEXT RIGHT — vertically centred with image -->
+    <div class="about-copy fi">
+      <span class="eyebrow">Our Story</span>
+      <h2 class="h2">Family-Run,<br><em>Heartfully</em> Made</h2>
+      <div class="rule"><div class="rl"></div><div class="rd"></div></div>
+      <p class="body-text">Mother Fast Food &amp; Restaurant is one of Surat's oldest and most beloved Gujarati food providers. Since 1998, we have been dedicated to serving authentic vegetarian Gujarati cuisine with an unwavering commitment to quality, taste, and hygiene.</p>
+      <p class="body-text" style="margin-top:9px;">As a family-run kitchen, we handle everything ourselves — no external staff — ensuring that each dish meets the same high standard our loyal customers have cherished for over two decades.</p>
+
+      <div class="feat-grid">
+        <div class="feat"><div class="feat-ic">🏡</div><div class="feat-t">Family Kitchen</div><div class="feat-d">No external staff — every meal made by us.</div></div>
+        <div class="feat"><div class="feat-ic">🌿</div><div class="feat-t">Pure Vegetarian</div><div class="feat-d">100% veg menu, crafted for every palate.</div></div>
+        <div class="feat"><div class="feat-ic">✨</div><div class="feat-t">Hygiene First</div><div class="feat-d">Fresh daily, highest cleanliness standards.</div></div>
+        <div class="feat"><div class="feat-ic">💰</div><div class="feat-t">Budget-Friendly</div><div class="feat-d">Wholesome meals at honest, fair prices.</div></div>
+      </div>
+
+      <div class="hours-box">
+        <div class="hours-t">⏰ Opening Hours</div>
+        <div class="hr"><span class="hr-l">Lunch · Mon – Sat</span><span class="hr-v">12:30 – 3:30 pm</span></div>
+        <div class="hr"><span class="hr-l">Dinner · Mon – Sat</span><span class="hr-v">7:30 – 11:00 pm</span></div>
+        <div class="hr"><span class="hr-l">Sunday</span><span class="hr-v cl">Closed</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ MENU ══ -->
+<section id="menu">
+  <div class="menu-head">
+    <div class="fi">
+      <span class="eyebrow">What We Serve</span>
+      <h2 class="h2">Our <em>Signature</em> Dishes</h2>
+      <div class="rule"><div class="rl"></div><div class="rd"></div></div>
+      <p class="body-text" style="max-width:400px; margin-top:4px;">Traditional recipes passed down through generations — every bite tells a story.</p>
+    </div>
+  </div>
+  <div class="menu-grid">
+    <div class="mc fi">
+      <div class="mc-img"><img src="https://github.com/ujvalmech/mother/blob/main/dish-1.jpg?raw=true" alt="Gujarati Thali" loading="lazy"><div class="mc-tag">Signature</div><div class="mc-veg"></div></div>
+      <div class="mc-body"><h3>Gujarati Thali</h3><p>2 seasonal sabjis, 5 chapatis or parathas, dal-rice, fresh salad with buttermilk and papad — all homemade.</p></div>
+    </div>
+    <div class="mc fi">
+      <div class="mc-img"><img src="https://github.com/ujvalmech/mother/blob/main/dish-2.jpg?raw=true" alt="Odo & Bajri Rotla" loading="lazy"><div class="mc-tag">Kathiyawadi</div><div class="mc-veg"></div></div>
+      <div class="mc-body"><h3>Odo &amp; Bajri Rotla</h3><p>Traditional Kathiyawadi comfort food — hearty bajri rotla served with flavorful odo for an authentic rural Gujarat taste.</p></div>
+    </div>
+    <div class="mc fi">
+      <div class="mc-img"><img src="https://github.com/ujvalmech/mother/blob/main/dish-3.jpg?raw=true" alt="Kadhi Khichdi" loading="lazy"><div class="mc-tag">Classic</div><div class="mc-veg"></div></div>
+      <div class="mc-body"><h3>Kadhi Khichdi</h3><p>Aromatic Gujarati kadhi paired with perfectly cooked khichdi — a soul-warming combination that feels like home.</p></div>
+    </div>
+    <div class="mc fi">
+      <div class="mc-img"><img src="https://github.com/ujvalmech/mother/blob/main/dish-4.jpg?raw=true" alt="Dal Bati" loading="lazy"><div class="mc-tag">Rajasthani</div><div class="mc-veg"></div></div>
+      <div class="mc-body"><h3>Dal Bati</h3><p>Crispy golden bati served alongside rich, savory dal — an authentic taste of Rajasthan brought to your table.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="testimonials">
+  <div class="testi-wrap">
+    <div class="fi" style="text-align:center;">
+      <span class="eyebrow">What People Say</span>
+      <h2 class="h2">Loved by <em>Thousands</em></h2>
+      <div class="rule c"><div class="rl" style="background:linear-gradient(to left,var(--spice),transparent)"></div><div class="rd"></div><div class="rl"></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rc fi">
+        <div class="rc-author"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUSvD5z3injKfxcBm2oaEtBKpenkz2kTPPiULki74RxudKirq8U=w90-h90-p-rp-mo-ba5-br100" alt="Maninder Singh" class="rc-av"><div><div class="rc-name">Maninder Singh</div><div class="rc-stars">★★★★☆</div></div></div>
+        <p class="rc-text">Budget food, incredible value for money — very low prices for the quality you get. Truly one of the best budget eats in Surat.</p>
+      </div>
+      <div class="rc fi">
+        <div class="rc-author"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVJGwDNlJDJ3vpfkOqQ8FRk9Oq7TYrMzt9AWyW86bPYp5AdOeItug=w90-h90-p-rp-mo-ba7-br100" alt="Kinjal Chhaya" class="rc-av"><div><div class="rc-name">Kinjal Chhaya</div><div class="rc-stars">★★★★★</div></div></div>
+        <p class="rc-text">A truly homely and personalized meal experience. You can feel the care and warmth in every dish — it's like eating at your own home.</p>
+      </div>
+    </div>
+    <div class="rat-row fi">
+      <div class="r-big">4.5</div>
+      <div class="r-div"></div>
+      <div><div class="r-stars">★★★★½</div><div class="r-cap">Rated on Google Reviews<br>Trusted by hundreds of customers in Surat</div></div>
+      <div class="r-g"><div class="g-c">G</div>Google Reviews</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="fi">
+    <span class="eyebrow">Find Us</span>
+    <h2 class="h2">Come <em>Visit</em> Us</h2>
+    <div class="rule"><div class="rl"></div><div class="rd"></div></div>
+  </div>
+  <div class="contact-grid">
+    <div class="cp fi">
+      <div class="ci"><div class="ci-icon">📍</div><div><h4>Our Address</h4><p>Shop No. 13, Crystal Complex, beside Jalaram Row-house, near Gangeshwar Temple, Chatrapati Shivaji Marg, New Adajan, Surat – 395009</p></div></div>
+      <div class="ci"><div class="ci-icon">✉️</div><div><h4>Email</h4><a href="mailto:motherfastfoodrestaurant@gmail.com">motherfastfoodrestaurant@gmail.com</a></div></div>
+      <div class="ci"><div class="ci-icon">📘</div><div><h4>Facebook</h4><a href="https://www.facebook.com/motherfastfood.in/" target="_blank" rel="noopener">Mother Fast Food – Follow Us</a></div></div>
+      <div class="ci"><div class="ci-icon">⏰</div><div><h4>Hours</h4><p>Lunch: Mon–Sat 12:30–3:30 pm<br>Dinner: Mon–Sat 7:30–11:00 pm<br>Sunday: Closed</p></div></div>
+    </div>
+    <div class="map-box fi">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.864655483635!2d72.78890807380276!3d21.19753488196323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c329067a09f%3A0x531880cc3b7c8bae!2sMother%20Fast%20Food%20%26%20Restaurant!5e0!3m2!1sen!2sin!4v1725016849137!5m2!1sen!2sin" allowfullscreen loading="lazy" title="Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <img src="https://raw.githubusercontent.com/ujvalmech/mother/3f66ba31090fc239ccd8c1187c6de011853649e7/logo.svg" alt="Mother Fast Food" class="foot-logo">
+      <p class="foot-ab">Surat's beloved family-run Gujarati restaurant since 1998. Pure vegetarian, authentically made with generations of love and tradition.</p>
+    </div>
+    <div class="fc">
+      <h5>Navigate</h5>
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#menu">Our Menu</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a>
+    </div>
+    <div class="fc">
+      <h5>Visit Us</h5>
+      <a href="https://maps.google.com/?q=Mother+Fast+Food+Restaurant+Surat" target="_blank" rel="noopener">New Adajan, Surat – 395009</a>
+      <a href="mailto:motherfastfoodrestaurant@gmail.com">Email Us</a>
+      <a href="https://www.facebook.com/motherfastfood.in/" target="_blank" rel="noopener">Facebook Page</a>
+      <a href="#contact">Mon–Sat · Lunch &amp; Dinner</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <p class="foot-cr">© 2024 Mother Fast Food &amp; Restaurant, Surat. All rights reserved.</p>
+    <div class="vbadge">100% Pure Vegetarian</div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+  const navEl=document.getElementById('nav'), btt=document.getElementById('btt');
+  window.addEventListener('scroll',()=>{ const y=window.scrollY; navEl.classList.toggle('scrolled',y>50); btt.classList.toggle('show',y>300); },{passive:true});
+
+  const burger=document.getElementById('burger'), drawer=document.getElementById('drawer');
+  burger.addEventListener('click',()=>{ const o=drawer.classList.toggle('open'); burger.classList.toggle('open',o); });
+  function cm(){ drawer.classList.remove('open'); burger.classList.remove('open'); }
+
+  const secs=document.querySelectorAll('section[id]'), lks=document.querySelectorAll('.nav-links a:not(.pill)');
+  window.addEventListener('scroll',()=>{ let c=''; secs.forEach(s=>{ if(window.scrollY>=s.offsetTop-90) c=s.id; }); lks.forEach(a=>{ a.style.color=''; if(a.getAttribute('href')==='#'+c) a.style.color='var(--spice-d)'; }); },{passive:true});
+
+  const obs=new IntersectionObserver((es)=>{ es.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('on'),i*75); obs.unobserve(e.target); } }); },{threshold:0.10});
+  document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
